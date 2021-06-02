@@ -6,7 +6,8 @@ class Moovies extends React.Component{
         renderMoovies: true,
         currentMoovie:""
     }
-   renderMoovies = () => {
+
+    renderMoovies = () => {
         return this.props.moovies.map(moovie => <Moovie onClick={this.onClick} addReview={this.props.addReview} key={moovie.id} moovie={moovie}/>)
     }
 

@@ -20,7 +20,7 @@ class App extends React.Component{
 
   onClick = (e) => {
     this.setState(prevState => ({
-      display: e.target.id
+      display: "home"
     }))
   }
 

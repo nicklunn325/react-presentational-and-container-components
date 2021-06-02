@@ -9,10 +9,6 @@ class MooviesContainer extends React.Component{
         reviews:[]
     }
 
-    topReviews = () => {
-        return this.state.reviews.filter(review => review.rating === 5)
-    }
-    
     render(){
         return(
             <div className="mooviesContainer">
@@ -20,6 +16,10 @@ class MooviesContainer extends React.Component{
                 <MooviesSideBar getMoovie={this.getMoovie}topReviews={this.topReviews()} addMoovie={this.addMoovie}/>
             </div>
         )
+    }
+
+    topReviews = () => {
+        return this.state.reviews.filter(review => review.rating === 5)
     }
 
     getReviews = (moovieId) => {
@@ -42,17 +42,21 @@ class MooviesContainer extends React.Component{
         }))
     }
 
-    componentDidMount = () => {
+    fetchMoovies = () => {
         fetch("http://localhost:3000/moovies")
         .then(res => res.json())
-        .then(moovieData => this.setState({
-            moovies: moovieData
-        }))
+        .then(moovieData => console.log(moovieData))
+    }
+
+    fetchReviews = () => {
         fetch("http://localhost:3000/reviews")
         .then(res => res.json())
-        .then(reviewData => this.setState({
-            reviews: reviewData
-        }))
+        .then(reviewData => console.log(reviewData))
+    }
+
+    componentDidMount = () => {
+        this.fetchMoovies()
+        this.fetchReviews()
     }
 }
 
