@@ -1,0 +1,63 @@
+{
+  "moovies": [
+    {
+      "title": "Kung Pow! Enter the Fist",
+      "imgURL": "https://m.media-amazon.com/images/M/MV5BMGQxZDEwZDctMjNkMi00YmIxLTgyN2MtYmJhYjEzZGY0NjljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "id": 1
+    },
+    {
+      "title": "Barnyard",
+      "imgURL": "https://m.media-amazon.com/images/M/MV5BMTU2NDE0ODYyNF5BMl5BanBnXkFtZTcwNjQ3NzAzMQ@@._V1_.jpg",
+      "id": 2
+    },
+    {
+      "title": "3:10 to Yuma",
+      "imgURL": "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/310_to_Yuma_%282007_film%29.jpg/220px-310_to_Yuma_%282007_film%29.jpg",
+      "id": 3
+    }
+  ],
+  "reviews": [
+    {
+      "title": "IT WAS THE BEST MOOVIE EVER!! SO MANY UTTERS!!",
+      "content": "cannot recommend this moovie enough to all my fellow bovine lovers",
+      "rating": 5,
+      "moovieId": 1,
+      "id": 1
+    },
+    {
+      "title": "Loved It",
+      "content": "Some moo-cow fun for the whole fam!!!",
+      "rating": 4,
+      "moovieId": 2,
+      "id": 2
+    },
+    {
+      "title": "BEST MOVIE EVER",
+      "content": "LOVE IT LOVE IT LOVE IT",
+      "rating": 5,
+      "moovieId": 2,
+      "id": 3
+    },
+    {
+      "title": "Ehhhhhh",
+      "content": "Ehhhhhhh",
+      "rating": 1,
+      "moovieId": 3,
+      "id": 4
+    },
+    {
+      "title": "MUST WATCH",
+      "content": "a kung-fu cow?!",
+      "rating": 5,
+      "moovieId": 1,
+      "id": 5
+    },
+    {
+      "title": "SUCKED!@",
+      "content": "SO BAD DON\"T WATCH PLEASE",
+      "rating": 1,
+      "moovieId": 2,
+      "id": 6
+    }
+  ]
+}
